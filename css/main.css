@@ -63,6 +63,7 @@ h1, .subhead {
     
   margin:0 0 12% 0;
   font-weight:normal;
+  transform:skewY(3deg);
 }
 
 .blue-container ul {
@@ -176,6 +177,10 @@ h1, .subhead {
   .exit-btn img {
     width:15%;
     cursor: pointer;
+  }
+
+  .cta {
+    width:50%;
   }
 
   @media only screen and (min-width: 650px) {
