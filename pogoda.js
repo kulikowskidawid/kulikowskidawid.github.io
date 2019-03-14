@@ -9,7 +9,7 @@ class Weather {
 
   //Fetch - Dynamiczne Pobranie zasobów z API
   async getWeather() {
-    const response = await fetch(`https://api.apixu.com/v1/current.json?key=${this.apiKey}&q=${this.name}`);
+    const response = await fetch(`http://api.apixu.com/v1/current.json?key=${this.apiKey}&q=${this.name}`);
 
     const responseData = await response.json();
 

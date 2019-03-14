@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,10 @@
 <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
+        <div class="col-md-6 sm-auto mx-auto text-center bg-primary mt-5 p-4 rounded">
+          <h5 id="w-localtime"></h5>
           <h1 id="w-location"></h1> 
+          <h2 id="w-country"></h2>
           <h3 id="w-string"></h3>
           <img id="w-icon">
           <ul id="w-details" class="list-group mt-3">
@@ -24,7 +26,7 @@
           <hr>
         
         <!-- Button Komponentu Bootstrap Modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#locModal"> Zmień Lokalizację </button>   
+        <button type="button" class="btn btn-primary border" data-toggle="modal" data-target="#locModal"> Zmień Lokalizację </button>   
       </div>
     </div>
   </div>

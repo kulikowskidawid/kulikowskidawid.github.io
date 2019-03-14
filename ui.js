@@ -9,9 +9,13 @@ class UI {
     this.feelsLike = document.getElementById('w-feels-like');
     this.cloud= document.getElementById('w-cloud');
     this.wind = document.getElementById('w-wind');
+    this.country = document.getElementById('w-country');
+    this.localtime = document.getElementById('w-localtime');
   }
   // Metoda paint która wypełni aplikacje rezultatami z API
   paint(weather) {
+    this.localtime.textContent = weather.location.localtime;
+    this.country.textContent = weather.location.country;
     this.location.textContent = weather.location.name;
     this.string.textContent = `${weather.current.temp_c} °C`;
     this.icon.setAttribute('src', `http:${weather.current.condition.icon}`);

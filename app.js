@@ -1,4 +1,3 @@
-// Inicjalizacja obiektu weather
 
 // Inicjalizacja Local Storage 
 const storage = new Storage();
